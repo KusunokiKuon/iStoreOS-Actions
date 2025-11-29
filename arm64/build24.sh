@@ -1032,9 +1032,11 @@ PACKAGES="$PACKAGES xz"
 PACKAGES="$PACKAGES xz-utils"
 PACKAGES="$PACKAGES zlib"
 PACKAGES="$PACKAGES zram-swap"
+
+# 必要，否则报错
 PACKAGES="$PACKAGES -libustream-mbedtls"
 
-# 固件打包脚本必要依赖，其他依赖官方列表已集成
+# 固件打包必要依赖，其他依赖官方列表已集成
 PACKAGES="$PACKAGES perlbase-time"
 
 # 斐讯N1无线：此固件未考虑无线，需自行研究；其中iw和iwinfo官方列表已集成
